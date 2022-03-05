@@ -2,7 +2,7 @@ const jwt = require("jsonwebtoken")
 const { JWT_SECRET } = require("../auth/secrets/index"); // use this secret!
 const Users = require("../users/users-model")
 
-// middleware for authorization tho handled by usefront
+// middleware for backend authorization though useFront was used for authorization
 
 // restricted (for protected route, the Budget)
 const restricted = (req, res, next) => {
